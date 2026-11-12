@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding -->
+    <meta charset="utf-8">
+    <!-- Ensure responsive layout on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website description for search engines -->
+    <meta name="description" content="Cooko Culinary and Barista Academy">
+    <!-- Website page title -->
+    <title>Home | Cooko Culinary &amp; Barista Academy</title>
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Montserrat font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom website stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome icons library -->
+    <script src="https://kit.fontawesome.com/61dd4547bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ==================== HEADER/NAVIGATION ==================== -->
+    <header class="site-header">
+
+        <!-- Website logo linking to the homepage -->
+        <a class="brand" href="index.html" aria-label="Cooko home">
+            <img src="https://file.garden/Z3vD60ATXQ2EQqUV/cooko-logo.png" alt="Cooko Culinary and Barista Academy logo">
+        </a>
+
+        <!-- Mobile navigation menu toggle button -->
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <!-- Main website navigation links -->
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- Main heading of the Contact page -->
+        <h1 class="contact-title">Contact Us</h1>
+
+        <!-- Contact section containing the inquiry form and academy details -->
+        <section class="contact-layout">
+
+            <!-- ==================== CONTACT FORM ==================== -->
+            <!-- Form where visitors can send questions and enrollment inquiries -->
+            <form class="contact-form" id="contactForm">
+
+                <!-- Contact form heading and instructions -->
+                <h2>For Questions, Inquiries, &amp; Enrollment Queries</h2>
+                <p>Fill the form and drop us a message</p>
+                <p>Contact Us</p>
+
+                <!-- Indicates that fields marked with an asterisk are required -->
+                <p>“*” Indicates required fields</p>
+
+                <!-- Form grid organizes the input fields into a layout -->
+                <div class="form-grid">
+
+                    <!-- First name input field -->
+                    <label class="form-field">
+                        Full name *
+                        <input required name="firstName" placeholder="First Name">
+                    </label>
+
+                    <!-- Last name input field -->
+                    <label class="form-field">
+                        &nbsp;
+                        <input required name="lastName" placeholder="Last Name">
+                    </label>
+
+                    <!-- Email address input field with email validation -->
+                    <label class="form-field">
+                        Email Address *
+                        <input required type="email" name="email" placeholder="Your Email">
+                    </label>
+
+                    <!-- Contact number input field -->
+                    <label class="form-field">
+                        Contact No. *
+                        <input required name="phone" placeholder="Your Contact Number">
+                    </label>
+
+                    <!-- Dropdown menu for selecting the inquiry subject -->
+                    <label class="form-field full">
+                        Subject *
+                        <select required name="subject">
+
+                            <!-- Default dropdown option -->
+                            <option value="">Questions &amp; Queries</option>
+
+                            <!-- Available inquiry categories -->
+                            <option>Barista 101</option>
+                            <option>Barista 102</option>
+                            <option>Enrollment</option>
+                            <option>Other inquiry</option>
+
+                        </select>
+                    </label>
+
+                    <!-- Message textarea where visitors can write their inquiries -->
+                    <label class="form-field full">
+                        Message *
+                        <textarea required name="message"
+                            placeholder="What do you want to tell us?"></textarea>
+                    </label>
+
+                </div>
+
+                <!-- Submit button for sending the contact form -->
+                <div class="submit-wrap">
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+
+                <!-- Displays form submission messages or feedback -->
+                <!-- aria-live allows screen readers to announce updates -->
+                <div class="notice" id="formNotice" aria-live="polite"></div>
+
+            </form>
+
+            <!-- ==================== CONTACT DETAILS ==================== -->
+            <!-- Aside section displaying the academy's contact information -->
+            <aside class="contact-details">
+
+                <!-- Social media information -->
+                <div class="detail-block">
+                    <h3>Socials:</h3>
+
+                    <!-- Facebook account information -->
+                    <div class="detail-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Cooko Culinary and Barista Academy
+                    </div>
+
+                    <!-- Instagram account information -->
+                    <div class="detail-social">
+                        <i class="fa-brands fa-instagram"></i>
+                        Cooko Academy
+                    </div>
+                </div>
+
+                <!-- Academy physical address -->
+                <div class="detail-block">
+                    <h3>Address:</h3>
+                    <p>
+                        2nd Floor, #4 E. Rodriguez Jr. Ave.,
+                        Brgy. Bagong Ilog, C5, Pasig, Philippines, 1600
+                    </p>
+                </div>
+
+                <!-- Academy contact phone number -->
+                <div class="detail-block">
+                    <h3>Phone:</h3>
+                    <p>0917 146 6803</p>
+                </div>
+
+                <!-- Academy operating schedule -->
+                <div class="detail-block">
+                    <h3>Business Hours:</h3>
+                    <p>Monday to Saturday | 8:00 AM - 5:00 PM</p>
+                </div>
+
+            </aside>
+
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+
+        <!-- Footer navigation links -->
+        <div class="footer-links">
+            <!-- Link to the contact page -->
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Social media links and icons -->
+        <div class="socials">
+
+            <!-- Facebook social media link -->
+            <a href="https://facebook.com" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <!-- Instagram social media link -->
+            <a href="https://instagram.com" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript bundle for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript file for website functionality -->
+    <script src="/scripts.js"></script>
+
+</body>
+
+</html>
